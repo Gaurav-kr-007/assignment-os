@@ -19,7 +19,7 @@ Consider the following operation on an arbitrary positive integer:
 
 In short apply the following function repeatedly:
 
-{{image}}
+![n = { n/2 if n is even and 3n + 1 if n is odd](/collatz-sequence/collatz.svg)
 
 
 The conjecture states that when this algorithm is continually applied,
@@ -54,9 +54,9 @@ starting from `0` and `1`.
 
 The following recurrence relation defines `nth` fibonacci number:
 
-{{ image }}
+![F0 = 0, F1 = 1](/fibonacci-series/fibonacci1.svg)
 
-{{ image }}
+![Fn = Fn-1 + Fn-2](/fibonacci-series/fibonacci2.svg)
 
 **Example**: The first 12 Fibonacci numbers are as follows
 ```
