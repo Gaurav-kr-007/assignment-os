@@ -33,3 +33,31 @@ to complete and then exit the program.
 The program also performs error checking to verify that
 a positive integer is passed through command line.
 
+## Fibonacci series
+
+A multithreaded C program that generates the Fibonacci sequence.
+
+### Fibonacci numbers
+
+Fibonacci series is formed by consecutive fibonacci numbers,
+starting from `0` and `1`.
+The following recurrence relation defines `nth` fibonacci number:
+{{ image }}
+{{ image }}
+
+**Example**: The first 12 Fibonacci numbers are as follows
+```
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 ...
+```
+
+### OS Threading concept
+
+On the command line, the user will enter the number of
+Fibonacci numbersthat the program is to generate.
+The program will then create a separate thread that will generate
+the Fibonacci numbers, placing the sequence in some buffer that can be
+shared by the threads. When the thread finishes execution,
+the parent thread will output the sequence generated
+by the child thread. Then the parent thread shall wait
+until the completion of the fibonacci thread and then
+output the fibonacci series.
